@@ -22,7 +22,7 @@ class PagePersonList extends Module
             /** @var BackendTemplate|object $objTemplate */
             $objTemplate = new BackendTemplate('be_wildcard');
 
-            $objTemplate->wildcard = '### ' . Utf8::strtoupper($GLOBALS['TL_LANG']['CTE']['personlist'][0]) . ' ###';
+            $objTemplate->wildcard = '### ' . Utf8::strtoupper($GLOBALS['TL_LANG']['FMD']['pagePersonList'][0]) . ' ###';
             $objTemplate->id = $this->id;
             $objTemplate->link = $this->title;
             $objTemplate->href = 'contao/main.php?do=form&amp;table=tl_form_field&amp;id=' . $this->id;
