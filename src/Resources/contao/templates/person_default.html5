@@ -1,5 +1,5 @@
 <div class="person" itemscope itemtype="http://schema.org/Person">
-    <h2 class="name" itemprop="name"><?php print $this->firstname; ?> <?php print $this->lastname; ?></h2>
+    <div class="name" itemprop="name"><?php print $this->firstname; ?> <?php print $this->lastname; ?></div>
     <?php if ($this->function) { ?>
     <p class="function" itemprop="jobTitle"><?php print $this->function; ?></p>
     <?php } ?>
@@ -25,7 +25,14 @@
     <?php if ($this->phone) { ?>
     <p class="phone" itemprop="telephone"><?php print $this->phone; ?></p>
     <?php } ?>
+    <?php if ($this->fax) { ?>
+    <p class="phone" itemprop="telephone"><?php print $this->fax; ?></p>
+    <?php } ?>
+    <?php if ($this->mobile) { ?>
+    <p class="phone" itemprop="telephone"><?php print $this->mobile; ?></p>
+    <?php } ?>
     <?php if ($this->email) { ?>
-    <p class="email" itemprop="email"><?php print $this->email; ?></p>
+        <p class="email"><a href="mailto:<?php print $this->email; ?>" itemprop="email"><?php print $this->email;
+        ?></a></p>
     <?php } ?>
 </div>

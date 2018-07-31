@@ -16,7 +16,7 @@ class Person extends ContentElement
 
     public function generate()
     {
-        if ($this->personTemplate) {
+        if (TL_MODE == 'FE' && $this->personTemplate) {
             $this->strPersonTemplate = $this->personTemplate;
         }
 

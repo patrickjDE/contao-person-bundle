@@ -1,7 +1,7 @@
 <?php
 
-$GLOBALS['TL_DCA']['tl_module']['palettes']['person_list'] = '{title_legend},name,headline,type;{group_legend},personGroup,imgSize;{template_legend},personTemplate;{protected_legend:hide},protected;
-{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['personList'] = '{title_legend},name,headline,type;{person_legend},personGroup,imgSize;{template_legend},personTemplate;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['pagePersonList'] = '{title_legend},name,headline,type;{person_legend},imgSize;{template_legend},personTemplate;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['personGroup'] = [
     'label'      => &$GLOBALS['TL_LANG']['tl_module']['personGroup'],

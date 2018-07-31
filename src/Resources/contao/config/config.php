@@ -6,6 +6,7 @@ $GLOBALS['BE_MOD']['content']['person'] = [
 
 $GLOBALS['FE_MOD']['person'] = [
     'personList' => 'Patrickjde\Contao\PersonBundle\FrontendModule\PersonList',
+    'pagePersonList' => 'Patrickjde\Contao\PersonBundle\FrontendModule\PagePersonList',
 ];
 
 $GLOBALS['TL_CTE']['includes']['person'] = 'Patrickjde\Contao\PersonBundle\ContentElement\Person';
