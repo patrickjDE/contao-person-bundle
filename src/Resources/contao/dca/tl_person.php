@@ -21,10 +21,10 @@ $GLOBALS['TL_DCA']['tl_person'] = [
             'mode'         => 4,
             'fields'       => ['sorting'],
             'headerFields' => ['title'],
-//            'child_record_callback' => [
-//                'Patrickjde\Contao\PersonBundle\Table\Person',
-//                'listPerson',
-//            ],
+            'child_record_callback' => [
+                'Patrickjde\Contao\PersonBundle\DataContainer\PersonDca',
+                'listPerson',
+            ],
         ],
         'label'             => [
             'fields' => ['lastname', 'firstname'],
